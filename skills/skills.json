@@ -1,0 +1,35 @@
+{
+  "note": "Registry of RL-trained robot skills. Metrics live in <skill>/train_log.json (real RLinf TensorBoard exports). Checkpoints are not stored in this repo.",
+  "simulator": "RoboTwin 2.0",
+  "framework": "RLinf",
+  "algo": "GRPO",
+  "skills": [
+    {
+      "id": "pick_dual_bottles",
+      "name": "Pick Dual Bottles",
+      "summary": "Both arms grasp and lift two bottles",
+      "policy": "OpenVLA-OFT",
+      "total_steps": 260,
+      "checkpoint_step": 260,
+      "dir": "pick_dual_bottles"
+    },
+    {
+      "id": "place_shoe",
+      "name": "Place Shoe",
+      "summary": "Pick up a shoe and set it on the target mat",
+      "policy": "LingBot-VLA",
+      "total_steps": 225,
+      "checkpoint_step": 220,
+      "dir": "place_shoe"
+    },
+    {
+      "id": "place_empty_cup",
+      "name": "Place Empty Cup",
+      "summary": "Place an empty cup on the coaster",
+      "policy": "OpenVLA-OFT",
+      "total_steps": 147,
+      "checkpoint_step": 140,
+      "dir": "place_empty_cup"
+    }
+  ]
+}
